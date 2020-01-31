@@ -1,0 +1,114 @@
+h5, h6 {
+  margin: 0;
+}
+
+.menucontainer {
+  max-width: 100% !important;
+}
+
+.abcmenucard {
+  margin: 10px 10px 0px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  background: #fafafa;
+}
+
+.abcmenucard .abcitem-bar {
+  background: #fefefe;
+  padding: 5px 0;
+  width: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f2f2f2;
+}
+
+.abcmenucard .abcitem-bar .abcitem {
+  padding: 0 2px;
+}
+
+.abcmenucard .abcitem-bar .abcitem h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.abcmenucard .abcitem-bar .abcitem:nth-of-type(1) h5 {
+  text-align: left;
+}
+
+.abcmenucard .abcitem-bar .abcitem:nth-of-type(2) {
+  padding: 0;
+}
+
+.abcmenucard .abcitem-bar .abcitem:nth-of-type(2) h5 {
+  text-align: center;
+}
+
+.abcmenucard .abcitem-bar .abcitem:nth-of-type(3) h5 {
+  text-align: right;
+}
+
+.abcmenucard .abcaddon-bar {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.abcmenucard .abcaddon-bar .abcaddon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2px;
+}
+
+.abcmenucard .abcaddon-bar .abcaddon h6 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.abcmenucard .abcaddon-bar .abcaddon h6 label {
+  min-width: 15px;
+}
+
+.abcmenucard .abcaddon-bar .abcaddon:nth-of-type(1) h6 {
+  font-weight: bold;
+}
+
+.abcmenucard .abcaddon-bar .abcaddon:nth-of-type(2) {
+  text-align: center;
+  padding: 0;
+}
+
+.abcmenucard .abcaddon-bar .abcaddon:nth-of-type(2) h6 {
+  width: 100%;
+}
+
+.abcmenucard .abcaddon-bar .abcaddon:nth-of-type(3) {
+  padding: 0;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.abcmenucard .abcaddon-bar .abcaddon:nth-of-type(3) button {
+  padding: 0px;
+  margin: 5px 5px 5px 0px;
+  width: 100%;
+}
+
+.abcmenucard .abcaddon-bar:nth-of-type(4) {
+  border-bottom: none;
+}
+
+.abcmenucard .abcbutton-bar {
+  margin-top: 5px;
+}
+
+.abcmenucard .abcbutton-bar .abcbutton {
+  padding: 0px 3px;
+}
+
+.abcmenucard .abcbutton-bar .abcbutton button {
+  width: 100%;
+}
+/*# sourceMappingURL=cart.css.map */

@@ -1,0 +1,242 @@
+/* Second start */
+.second_wrap {
+  width: 70%;
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  border: 1px solid #ddd;
+}
+
+.b-icon-ext {
+  display: flex;
+  justify-content: space-around;
+}
+
+.second_wrap .tabshead .ttab {
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  color: #313131;
+}
+
+.tablesec {
+  float: left;
+  height: calc(100% - 46px);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.items-container {
+  display: flex;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.din-table {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 9px;
+  box-shadow: 0px 2px 5px 2px #ddd;
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(252, 252, 252, 1) 13%,
+    rgba(246, 246, 246, 1) 34%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 1)),
+    color-stop(13%, rgba(252, 252, 252, 1)),
+    color-stop(34%, rgba(246, 246, 246, 1)),
+    color-stop(100%, rgba(237, 237, 237, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(252, 252, 252, 1) 13%,
+    rgba(246, 246, 246, 1) 34%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(252, 252, 252, 1) 13%,
+    rgba(246, 246, 246, 1) 34%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(252, 252, 252, 1) 13%,
+    rgba(246, 246, 246, 1) 34%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(252, 252, 252, 1) 13%,
+    rgba(246, 246, 246, 1) 34%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+.din-table:hover {
+  cursor: pointer;
+}
+
+.din-table img {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.din-table span {
+  margin: 5px;
+  font-size: 0.8em;
+  color: #707070;
+}
+
+/* Third Section */
+/* .third {
+  width: 30%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  border-left: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.thirdsec-notify {
+  padding-top: 5px;
+  height: auto;
+}
+
+.third-sec {
+  width: 100%;
+  float: left;
+  height: calc(100% - 85px);
+  padding: 20px 10px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+} */
+
+/* Important Staff Start */
+.tabs,
+.inner-tabs {
+  display: none;
+}
+.tabs.in,
+.inner-tabs.in {
+  display: block;
+}
+
+@media (max-width: 1375px) {
+  /* .orderbox {
+    height: auto;
+    float: left;
+  }
+  .user {
+    margin: auto;
+    float: none;
+    margin-bottom: 10px;
+  }
+  .userid {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .price {
+    display: inline-block;
+  }
+  .time {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .worklogo i {
+    font-size: 30px;
+  } */
+}
+
+.orderbox.shadow-danger{
+  width: 100%;
+  padding: 5px;
+}
+
+#restaurant .userid{
+  margin-left: -33% !important;
+}
+
+#restaurant .first_wrap .simplebar-mask{
+  background: white;
+}
+
+.order-content {
+  padding-right: 20px !important;
+}
+
+.userprice{
+  padding-top: 5px;
+}
+
+.orderbox.shadow-danger{
+  border: none !important;
+}
+
+#restaurant .simplebar-content{
+  padding: 10px 5px !important;  
+}
+
+#restaurant .simplebar-content-wrapper{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#restaurant .orderbox.shadow-danger{
+  font-weight: bold !important;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+#restaurant .first_wrap .underlined span{
+  font-weight: 100;
+}
+
+#restaurant .simplebar-content-wrapper{
+  padding-left: 5px !important;
+}
+
+#restaurant .s-iconbox.inner-ttab{
+  height: 46px;
+}
+
+#restaurant .orderbox.shadow-danger{
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+#restaurant .userprice{
+  padding-top: 0;
+}
+
+#restaurant #orders-notifications .userprice{
+  padding-left: 22%;
+}
+
+#restaurant #orders-notifications .worklogo{
+  padding-left: 25%;
+}
+
+#restaurant #orders-notifications .order-id{
+  padding-bottom: 12px;
+}

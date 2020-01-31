@@ -1,0 +1,58 @@
+.abctotal-box{
+    padding-top: 1px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #959595;
+    p{
+        margin: 0;
+    }
+    .abccheck-card{
+        margin: 5px;
+        background: #f2f2f2;
+        color: #626262;
+        font-size: 16px;
+        margin-bottom: 0px;
+        .row{
+            padding: 10px 5px;
+            border-bottom: 1px solid #e6e6e6;
+            width: 100%;
+            margin: 0;
+            
+            div{
+                padding: 0 2px;
+                font-weight: bold;
+            }
+        }
+        .row:nth-of-type(1){
+            background: #626262;
+            color: #fff;
+
+        }
+        .footer-row{
+            div:nth-of-type(1){
+                button{
+                    width: 100%;
+                    padding: 10px 0px;
+                    i{
+                        font-size: 21px;
+                    }
+                }
+            }
+            div:nth-of-type(2){
+                button{
+                    width: 100%;
+                    padding:10px 0px;
+                    font-weight: bold;
+                    font-size:16px;
+                }
+            }
+            div:nth-of-type(3){
+                strong{
+                    width: 100%;
+                    padding:10px 0px;
+                    font-weight: bold;
+                    font-size:16px;
+                }
+            }
+        }
+    }
+}

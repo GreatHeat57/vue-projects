@@ -1,0 +1,200 @@
+$w : rgb(224, 224, 224);
+$none : rgba(0,0,0,0);
+$primary: #21b0c9;
+// #749f01;
+$text:  #646464;
+$white: #fff;
+$brd-grey: #e6e6e6;
+// #bbbbbb;
+$secondary : #3b656c;
+
+.custom-box{
+    background: #fff;
+    border-top: none;
+   
+}
+.tabshead{
+    padding-top:0;
+    background: $secondary;
+    border: none;
+    .ttab{
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+        // border-bottom: 3px solid $brd-grey;
+        height: 100%;
+        transition: background 0.4s ease-out;
+        i{
+            color: $white;
+          
+            span{
+                border: 1px solid $secondary;
+                color: rgb(199, 5, 5);
+                background: $white;
+            }
+        }
+        i:before{
+            font-size: 20px;
+        }
+    }
+    .ttab:nth-of-type(1){
+        span{
+            top: -3px;
+            left: 78%;
+        }
+    }
+    .ttab:nth-of-type(2){
+        span{
+            top: -3px;
+            left: 70%;
+        }
+    }
+    .ttab:nth-of-type(3){
+        span{
+            top: -3px;
+            left: 60%;
+        }
+    }
+    .ttab:nth-of-type(4){
+        span{
+            top: -3px;
+            left: 60%;
+        }
+    }
+    .active{
+        border-bottom: none;
+        height: 100%;
+        background: $white;
+        i{
+            color: $primary !important;
+            span{
+                border: 1px solid $none;
+                background: rgb(199, 5, 5);
+                color: $white;
+            }
+               
+        }
+        
+    }
+}
+.second{
+    padding-top: 0px;
+    padding:0px;
+    border-top: none;
+    .custom-menu{
+        .tabshead{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .menu-box{
+        margin-top: 15px;
+    }
+}
+
+$small: "only screen and (max-width : 1315px)";
+.order-container{
+    justify-content: space-between;
+    .third-subbox{
+        
+        text-align: right;
+        min-width:103px;
+        margin: 15px 7px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-flow: column;
+        min-height: 87px;
+        margin-top:0px;
+        p.thirdname{
+            padding: 0;
+            text-align: right;
+        }
+    }
+}
+@media #{$small}{
+    .order-container{
+        .third-subbox{
+            flex-flow: column-reverse;
+            min-height: 0;
+            .thirdname{
+                margin-top: 5px;
+            }
+            .thirdprice{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.orderNotifications{
+    .orderbox{
+        height: auto;
+        border: 2px solid $none;
+        padding-bottom: 0px;
+     //    box-shadow:  0px 3px 10px #A3A3A3;
+        border: 1px solid #e6e6e6;
+        background: #f7f7f7;
+         .order-content{
+             display: flex;
+             justify-content: space-between;
+             margin-bottom: 1em;
+             .userid{
+                 text-align: left;
+                 width:50%;  
+                 p.order-id{
+                     font-size: 16px;
+                     padding: 5px;
+                 }
+                 p.eta{
+                     font-size: 12px;
+                     color: #8a91b4;
+                     font-weight: 300;
+                     padding: 5px;
+                     color: $text;
+                 }
+             }
+             .userprice{
+                 text-align: right;
+                 width: 50%;
+                div{
+                 display: flex;
+                 justify-content: flex-end;
+                 .price{
+                     max-width: min-content;
+                     color: $white;
+                     background: $primary;
+                     padding: 4px 6px;
+                     border-radius:5px;
+                     padding: 5px;
+                 }
+                }
+                 .worklogo{
+                     padding: 5px;
+                     float: none;
+                     color:$text;
+                     margin: 9px 0 0 0;
+                 }
+             }
+         }
+         .underlined{
+             border-top: 1px solid $text;
+             width:100%;
+             div{
+                 color:$text;
+                 margin: 5px 10px;
+                 display: flex;
+                 justify-content: space-between;
+                 .order-id{
+                    font-weight: 600;
+                 }
+
+             }
+         }
+
+     }
+    .shadow-danger{
+        border: 2px solid $none;
+    }
+
+ }

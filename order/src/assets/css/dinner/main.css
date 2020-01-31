@@ -1,0 +1,233 @@
+.custom-box {
+  background-color: #fff !important;
+  border-top: none;
+}
+
+.tabshead {
+  padding-top: 0;
+  background: #3b656c;
+  border: none;
+}
+
+.tabshead .ttab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0 10px 0;
+  height: 100%;
+  -webkit-transition: background 0.4s ease-out;
+  transition: background 0.4s ease-out;
+}
+
+.tabshead .ttab i {
+  color: #fff;
+}
+
+.tabshead .ttab i span {
+  border: 1px solid #3b656c;
+  color: #c70505;
+  background: #fff;
+}
+
+.tabshead .ttab i:before {
+  font-size: 20px;
+}
+
+.tabshead .ttab:nth-of-type(1) span {
+  top: -3px;
+  left: 78%;
+}
+
+.tabshead .ttab:nth-of-type(2) span {
+  top: -3px;
+  left: 70%;
+}
+
+.tabshead .ttab:nth-of-type(3) span {
+  top: -3px;
+  left: 60%;
+}
+
+.tabshead .ttab:nth-of-type(4) span {
+  top: -3px;
+  left: 60%;
+}
+
+.tabshead .active {
+  border-bottom: none;
+  height: 100%;
+  background: #fff;
+}
+
+.tabshead .active i {
+  color: #21b0c9 !important;
+}
+
+.tabshead .active i span {
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #c70505;
+  color: #fff;
+}
+
+.second {
+  padding-top: 0px;
+  padding: 0px;
+  border-top: none;
+}
+
+.second .custom-menu .tabshead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second .menu-box {
+  margin-top: 15px;
+}
+
+.order-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order-container .third-subbox {
+  text-align: right;
+  min-width: 103px;
+  margin: 15px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 87px;
+  margin-top: 0px;
+}
+
+.order-container .third-subbox p.thirdname {
+  padding: 0;
+  text-align: right;
+}
+
+@media only screen and (max-width: 1315px) {
+  .order-container .third-subbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    min-height: 0;
+  }
+  .order-container .third-subbox .thirdname {
+    margin-top: 5px;
+  }
+  .order-container .third-subbox .thirdprice {
+    margin-top: 5px;
+  }
+}
+
+.orderNotifications .orderbox {
+  height: auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  border: 1px solid #e6e6e6;
+  background: #f7f7f7;
+}
+
+.orderNotifications .orderbox .order-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.orderNotifications .orderbox .order-content .userid {
+  text-align: left;
+  width: 50%;
+}
+
+.orderNotifications .orderbox .order-content .userid p.order-id {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.orderNotifications .orderbox .order-content .userid p.eta {
+  font-size: 12px;
+  color: #8a91b4;
+  font-weight: 300;
+  padding: 5px;
+  color: #646464;
+}
+
+.orderNotifications .orderbox .order-content .userprice {
+  text-align: right;
+  width: 50%;
+}
+
+.orderNotifications .orderbox .order-content .userprice div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.orderNotifications .orderbox .order-content .userprice div .price {
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  color: #fff;
+  background: #21b0c9;
+  padding: 4px 6px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.orderNotifications .orderbox .order-content .userprice .worklogo {
+  padding: 5px;
+  float: none;
+  color: #646464;
+  margin: 9px 0 0 0;
+}
+
+.orderNotifications .orderbox .underlined {
+  border-top: 1px solid #646464;
+  width: 100%;
+}
+
+.orderNotifications .orderbox .underlined div {
+  color: #646464;
+  margin: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.orderNotifications .orderbox .underlined div .order-id {
+  font-weight: 600;
+}
+
+.orderNotifications .shadow-danger {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+/*# sourceMappingURL=main.css.map */

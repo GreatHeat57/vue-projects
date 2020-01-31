@@ -1,0 +1,65 @@
+<?php
+
+namespace App\Traits;
+
+use Illuminate\Support\Str;
+use OwenIt\Auditing\AuditableObserver;
+
+trait UniqueIDFormat
+{
+    public function getFormatColumnName()
+    {
+        $propName = $this->getTable();
+        $propName = Str::singular($propName) . '_format';
+        return $propName;
+    }
+
+    /**
+     * Auto save table table_format column and not save this in audits tabke.
+     *
+     * @return void
+     */
+    public static function bootUniqueIDFormat()
+    {
+        static::created(function ($model) {
+            $old = AuditableObserver::$restoring;
+            AuditableObserver::$restoring = true;
+            $propName = $model->getFormatColumnName();
+            $model->{$propName} = $model->getUniqueIDFormat($model->getKey());
+            $model->save();
+            AuditableObserver::$restoring = $old;
+        });
+    }
+
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function getUniqueIDFormat($id)
+    {
+        $template = $this->getUniqueIDTemplate();
+
+        $len = strlen($id);
+        $formatLimit = (property_exists($this, 'formatLength')) ? $this->formatLength : 6;
+        if ($len < $formatLimit) {
+            for ($i = 0; $i < ($formatLimit - $len); $i++) {
+                $id = '0' . $id;
+            }
+        }
+
+        return str_replace('ID', $id, $template);
+    }
+
+    /**
+     * @return mixed
+     */
+    protected function getUniqueIDTemplate()
+    {
+        $format = $this->getTable();
+        $format = Str::singular($format);
+        $format = strtoupper($format);
+        $format .= '_FORMAT';
+        return env($format, 'TE-ID');
+    }
+
+}

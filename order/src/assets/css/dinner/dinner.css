@@ -1,0 +1,378 @@
+/* custom dinners order item */
+
+.ofb {
+  padding: 20px 10px;
+}
+
+#dinner .dinners-order {
+  width: 47%;
+  float: left;
+  height: 185px !important;
+  padding: 2px !important;
+  display: flex;
+  flex-direction: column;
+  background: #7ca60b !important;
+  justify-content: flex-end;
+  border-radius: 2px;
+  border: none;
+  margin: 10px 5px;
+  min-width: 145px;
+  
+  /* height: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding-bottom: 0px;
+    background: #f7f7f7; */
+}
+#dinner .dinners-order.shadow-danger {
+  /* background-color: #eb0404; */
+}
+#dinner .dinners-order.shadow-warning {
+  background-color: #d26e1a;
+}
+#dinner .dinners-order:nth-child(2n) {
+  float: right;
+}
+#dinner .dinners-order > div {
+  background-color: #fff;
+}
+#dinner .dinners-order .icon {
+  display: flex;
+}
+#dinner .dinners-order .user {
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: -30px;
+  width: 60px;
+  height: 60px;
+}
+#dinner .dinners-order .user.user-icon i {
+  padding: 5px;
+}
+
+#dinner .dinners-order .userid {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+#dinner .dinners-order .price, #dinner .dinners-order .userid p {
+  color: #5a5757;
+}
+
+#dinner #orders-notifications .price{
+      font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 3px 5px !important;
+    color: white;
+}
+
+.simplebar-content{
+  padding: 10px 5px !important;
+}
+
+.dinners-order .userprice {
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid #ddd;
+      margin-right: -43%;
+    padding-top: 7px;
+}
+
+#dinner #orders-notifications .userprice{
+      margin-right: -45% !important;
+    padding-top: 7px !important;
+}
+
+.worklogo {
+      margin-left: 23% !important;
+}
+
+.dinners-order .time {
+  margin: 0;
+}
+
+.underlined span{
+      font-family: "Montserrat", sans-serif;
+}
+
+.dinners-order .order-time {
+  margin-top: 5px !important;
+  /* color: #666464; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 3px;
+}
+
+/* second Start */
+
+.second {
+  width: 14%;
+  float: left;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  /* border-right: 1px solid #ddd; */
+  background: #fff;
+  border-top: 5px solid #749f01;
+  margin: 5px;
+}
+.second-box {
+  width: 85%;
+  height: 100px;
+  background: green;
+  border-radius: 10px;
+  position: relative;
+  background-image: url('../../images/secondbox.jpg');
+  background-size: cover;
+  margin: 0 auto 20px auto;
+}
+.second-box:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: inherit;
+}
+.second-text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  font-weight: bold;
+}
+.third {
+  width: 30%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
+
+.third .b-iconbox {
+  width: 25%;
+}
+
+.third-sec-container {
+  width: 100%;
+  height: calc(100% - 46px);
+  float: left;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.third-sec {
+  width: 100%;
+  float: left;
+  height: 100%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.third-sec2 {
+  width: 100%;
+  float: left;
+  height: 100%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.third-sec3 {
+  width: 100%;
+  float: left;
+  height: 100%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.third-sec4 {
+  width: 100%;
+  float: left;
+  height: 100%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.third-subbox {
+  font-family: "Montserrat", sans-serif;
+  height: 75px;
+  width: calc(50% - 22px);
+  float: left;
+  margin: 0 10px;
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(116, 159, 1, 0.16),
+    0 3px 6px rgba(116, 159, 1, 0.23);
+  border: 1px solid #749f01;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 15px 10px;
+  min-width: 150px;
+}
+.third-subbox span {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  background: #749f01;
+  border-radius: 5px;
+  top: 10px;
+  left: -10px;
+  text-align: center;
+  font-size: 14px;
+  padding: 3px;
+  font-weight: 550;
+  color: #fff;
+}
+.thirdname {
+  margin: 0;
+  padding-left: 43px;
+  line-height: 1;
+}
+.thirdprice {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.tabs,
+.inner-tabs {
+  display: none;
+}
+.tabs.in,
+.inner-tabs.in {
+  display: block;
+}
+
+@media (max-width: 1375px) {
+  /* .orderbox {
+    height: auto;
+    float: left;
+  }
+  .user {
+    margin: auto;
+    float: none;
+    margin-bottom: 10px;
+  }
+  .userid {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .price {
+    display: inline-block;
+  }
+  .time {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .worklogo i {
+    font-size: 30px;
+  }
+  .third-box {
+    margin-bottom: 0;
+  }
+  .third-subbox {
+    width: calc(100% - 22px);
+    margin-bottom: 20px;
+  }
+  .third {
+    width: 25%;
+  }
+  .fourth {
+    width: 30%;
+  }
+  .fourthsec {
+    height: 700px;
+    overflow-y: auto;
+  } */
+}
+
+#dinner .order-content .userid{
+  margin-left: -12% !important;
+      font-size: 16px !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 73% !important;
+        padding-top: 3px;
+}
+
+#dinner #orders-notifications .order-id{
+  font-size: 16px;
+}
+
+#dinner_first a.b-iconbox.ttab {
+  width:25%;
+}
+
+#dinner #orders-notifications .orderbox.shadow-success .col-4{
+      padding-top: 5px;
+    padding-left: 20px;
+}
+
+#dinner #orders-notifications .user{
+  width:55px !important;
+  height: 55px !important;
+}
+
+#orders-take-away .user.user-icon{
+  width: 60px !important;
+}
+
+#orders-take-away{
+  font-family: "Montserrat", sans-serif;
+}
+
+#orders-take-away .userid{
+  padding-top: 17px !important;
+}
+
+#orders-take-away .firstp{
+  line-height: 1;
+}
+
+#orders-take-away .userprice{
+  margin: 0 !important;
+      padding-top: 6px !important;
+}
+
+#orders-take-away .price{
+      margin-bottom: 3px;
+    font-weight: 700;
+    padding-bottom: 3.5px !important;
+    padding-left: 1px !important;
+}
+
+#orders-take-away .time{
+      padding-top: 3px;
+}
+
+#orders-eating .user.user-icon{
+  width: 60px !important;
+}
+
+#orders-eating{
+  font-family: "Montserrat", sans-serif;
+}
+
+#orders-eating .userid{
+  padding-top: 17px !important;
+}
+
+#orders-eating .firstp{
+  line-height: 1;
+}
+
+#orders-eating .userprice{
+  margin: 0 !important;
+      padding-top: 6px !important;
+}
+
+#orders-eating .price{
+      margin-bottom: 3px;
+    font-weight: 700;
+    padding-bottom: 3.5px !important;
+    padding-left: 1px !important;
+}
+
+#orders-eating .time{
+      padding-top: 3px;
+}
